@@ -1,8 +1,8 @@
 /* Imports */
 /* Fonts */
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: 'Wave';
+    src: url(/ricky102890.github.io/ASSETS/FONTS/LTWave-Medium.otf);
 }
 @font-face {
     font-family: ;
@@ -31,12 +31,25 @@
 }
 body {
     background: var(--bkg_clr_midnightBlue);
+    font-family: 'Wave', sans-serif;
 }
 header {
 
 }
 nav {
 
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--font_clr_offWhite);
+}
+h1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+    text-align: center;
 }
 
 
