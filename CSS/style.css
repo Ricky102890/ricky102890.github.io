@@ -13,15 +13,23 @@
 
 /* Utility Classes */
 :root {
-    --font_success_clr: ;
-    --font_failure_clr: ;
+    --color_slateBlue: #2d4f64;
+    --bkg_clr_midnightBlue: #15252f;
+    --font_clr_white: #ffff;
+    --font_clr_offWhite: #e7e9ea;
+    --font_clr_lightGray: #d0d3d5;
+    --font_clr_gray: #a1a7ab;
+    --font_clr_darkGray: #727c82;
+    --font_clr_darkerGray: #435058;
+    --font_success_clr: #34642d;
+    --font_failure_clr: #622629;
     --font_link_clr: ;
     --font_link_hover_clr: ;
     --font_link_vs_clr: ;
     --font_link_atv_clr: ;
 }
 body {
-
+    background: var(--bkg_clr_midnightBlue6);
 }
 header {
 
