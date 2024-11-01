@@ -1,3 +1,25 @@
+/* Imports */
+/* Fonts */
+@font-face {
+    font-family: ;
+    src: url();
+}
+@font-face {
+    font-family: ;
+    src: url();
+}
+/* Animations */
+/* Animations - Links */
+
+/* Utility Classes */
+:root {
+    --font_success_clr: ;
+    --font_failure_clr: ;
+    --font_link_clr: ;
+    --font_link_hover_clr: ;
+    --font_link_vs_clr: ;
+    --font_link_atv_clr: ;
+}
 body {
 
 }
@@ -7,3 +29,5 @@ header {
 nav {
 
 }
+
+
