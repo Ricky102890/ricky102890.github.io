@@ -5,8 +5,8 @@
     src: url(/ricky102890.github.io/ASSETS/FONTS/LTWave-Medium.otf);
 }
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: 'Gravity';
+    src: url(/ricky102890.github.io/ASSETS/FONTS/Gravity-Light.otf);
 }
 /* Animations */
 /* Animations - Links */
@@ -31,25 +31,83 @@
 }
 body {
     background: var(--bkg_clr_midnightBlue);
-    font-family: 'Wave', sans-serif;
+    font-family: 'Gravity', sans-serif;
+    position: relative;
+}
+.header-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 header {
-
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url(/ricky102890.github.io/MEDIA/IMAGES/cycleOfLifeBackground.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px var(--font_clr_lightGray);
 }
 nav {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: transparent;
+}
+.navbar {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.navbar > button {
 
+}
+.nav-item {
+
+}
+.nav-item a {
+    color: var(--font_clr_darkerGray);
+    font-size: 1.25rem;
+    letter-spacing: .3rem;
+}
+.nav-item a:hover {
+    color: var(--color_slateBlue);
 }
 h1, h2, h3, h4, h5, h6 {
     color: var(--font_clr_offWhite);
 }
-h1 {
+.intro-heading-h {
     width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-size: 3rem;
+    font-family: 'Wave', sans-serif;
+    text-shadow: 2px 5px 8px var(--font_clr_darkerGray);
     text-align: center;
+    text-transform: uppercase;
+}
+.header-wrapper:hover ~ header {
+    position: absolute;
+    left: 0;
+}
+.intro-heading-p {
+    color: var(--font_clr_gray);
+    text-align: center;
+    font-family: 'Gravity', sans-serif;
 }
 
 
