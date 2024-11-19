@@ -84,7 +84,7 @@ nav {
 .nav-item a {
     display: inline-block;
     color: var(--font_clr_darkerGray);
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 800;
     letter-spacing: .3rem;
     text-shadow: 0 0 1px rgba(255, 255, 255, .7);
