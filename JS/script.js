@@ -38,3 +38,14 @@ function toggleServicesMenu() {
     })
 }
 toggleServicesMenu();
+
+function toggleNavigation() {
+    const hamburgerBtn = document.getElementById("hamburger_btn");
+    const navMenu = document.getElementById("nav_bar");
+
+    hamburgerBtn.addEventListener("click", () => {
+        if(hamburgerBtn)
+        hamburgerBtn.setAttribute("aria-expanded", "true");
+    })
+}
+toggleNavigation();

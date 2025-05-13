@@ -1,0 +1,53 @@
+@media (max-width: 800px) {
+    body {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    .hamburger-btn[aria-expanded="false"] {
+        display: block;
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+    .hamburger-btn[aria-expanded="false"] ~ .navbar {
+        display: none;
+    }
+    .hamburger-btn[aria-expanded="true"] {
+        
+    }
+    .hamburger-btn[aria-expanded="true"] ~ .navbar.show {
+
+    } 
+    .nav-acct {
+        margin-left: auto;
+    }
+    .hero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .home-intro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .home-intro p {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .scroll-top {
+        width: 20px;
+        height: 20px;
+        bottom: 2rem;
+        right: 2rem;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    
+}
