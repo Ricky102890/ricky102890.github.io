@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- METADATA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser -->
+    <title>BARBER CHELO</title>
+    <link rel="icon" type="image/x-icon" href="#">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/default.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <!-- JS -->
+    <script src="JS/script.js" defer></script>
+    <script src="JS/features.js" defer></script>
+</head>
+<body>
+    <div id="top_page"></div>
+    <a class="scroll-top" id="scroll_to_top_btn" href="index.html#top_page"><img src="/MEDIA/ICONS/scroll-up.svg" alt=""></a>
+    <header>
+        <img src="/MEDIA/ICONS/logo-white-gold.png" alt="Barber Chelo Logo" class="nav-logo">
+        <!-- RESPONSIVE BUTTON - MOBILE -->
+        <button class="hamburger-btn" aria-expanded="false" aria-controls="navbar">
+            <img src="/MEDIA/ICONS/hamburger-link-clr.svg" alt="Navigation Button">
+        </button>
+        <!-- NAVIGATION BAR -->
+        <ul class="navbar">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item mega-item">
+                <button class="nav-btn" id="service_btn">Services</button>
+                <div class="mega-menu" id="service_menu">
+                    <button id="close_mega_menu"><img src="/MEDIA/ICONS/close.svg" alt=""></button>
+                    <div class="mega-list">
+                        <a href="#">Basic Cuts</a>
+                        <a href="#">Specialized Cuts</a>
+                        <a href="#"></a>  
+                    </div>
+                    <div class="mega-list">
+                        <a href="#">Coloring / Bleaching</a>
+                        <a href="#">Hair Treatment</a>
+                        <a href="#">Shave / Trim</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item"><a href="#">About Us</a></li>
+        </ul>
+        <!-- NAVIGATION ACCOUNT MENU -->
+        <div class="nav-acct">
+            <button class="nav-acct-btn" id="nav_acct_btn">Account</button>
+            <div class="nav-acct-menu" id="nav_acct_menu">
+                <button id="acct_close_btn"><img src="/MEDIA/ICONS/close.svg" alt=""></button>
+                <div class="nav-acct-1">
+                    <img src="/MEDIA/IMAGES/Profile/man-1.jpg" alt="Profile Image">
+                    <h4 id="acct_name">Person</h4>
+                </div>
+                <hr>
+                <div class="nav-acct-2">
+                    <button id="aria_btn">Accessibility</button>
+                    <div class="aria-nav-menu" id="aria_menu">
+                        <button id="aria_close_btn"><img src="/MEDIA/ICONS/close.svg" alt=""></button>
+                        <button id="lightMode_toggle_btn">Light Mode</button>
+                        <button id="darkMode_toggle_btn">Dark Mode</button>
+                        <button id="anime_toggle_btn">Animations Off</button>
+                    </div>
+                </div>
+                <div class="nav-acct-3">
+                    <a href="https://barberchelo.barberly.app/booking">Make an Appointment</a>
+                    <a href="https://barberchelo.barberly.app/bookings">Check Appointment(s)</a>
+                </div>
+                <a href="#" id="edit_acct_btn">Edit Account</a>
+            </div>
+        </div>
+    </header>
+    <!-- HERO -->
+    <div class="hero">
+        <div class="overlay"></div>
+        <!-- <img src="/MEDIA/GIF/Black And White Dance GIF by xavieralopez.gif" alt=""> -->
+        <div class="hero-intro">
+            <h2>Step inside!</h2>
+            <div>
+                <span>Featured</span>
+            </div>
+        </div>
+        <div class="hero-services">
+            <h2>Featured Services</h2>
+            <div class="hero-serv-1">
+                <h3>Basic Cuts</h3>
+            </div>
+            <div class="hero-serv-2">
+                <h3>Specialized Cuts</h3>
+            </div>
+            <div class="hero-serv-3">
+                <h3>Styling - Misc.</h3>
+            </div>
+        </div>
+
+        <div class="hero-services">
+            <h2>Promotions</h2>
+            <div class="hero-serv-1">
+                <h3>25% OFF</h3>
+            </div>
+            <div class="hero-serv-2">
+                <h3>*REFERRAL BONUS</h3>
+            </div>
+        </div>
+
+        <div class="hero-services">
+            <h2>LGBTQ+ Friendly</h2>
+            <h2>Safe Space</h2>
+        </div>
+
+        <button class="book-btn" id="book_btn" onclick="window.location.href='https://barberchelo.barberly.app/booking'">Book Now</button>
+
+        
+    </div>
+    <div class="spacer"></div>
+    <!-- WEBPAGE CONTENT -->
+    <div class="responsive">
+        <!-- INTRODUCTION -->
+        <main>
+            <div class="home-intro">
+                <h2>Our Boutique</h2>
+                <p>
+                    "Introducing <span class="clr-pop">Barber Chelo</span>, the ultimate destination for those seeking a premium grooming, styling experiences tailored to their unique needs and style.
+                    Located near Downtown Denver - Five Points, provides clients with quick access and convenient parking.
+                    Founded by a team of talented female barbers, our boutique shop is dedicated to redefining the traditional barbershop/salon experience. 
+                </p>
+            </div>
+            <div class="slider">
+                        
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <div class="slide first">
+                            <img src="/MEDIA/BARBER-CHELO-MEDIA/face-steam.png" alt="Image">
+                            <div class="img-details">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis aliquid excepturi et ut hic nisi, 
+                                    veritatis non quae odio provident deserunt in dolor autem saepe!
+                                </p>
+                                <a href="#">More Info</a>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="/MEDIA/BARBER-CHELO-MEDIA/pug-chair.png" alt="Image">
+                            <div class="img-details">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis aliquid excepturi et ut hic nisi, 
+                                    veritatis non quae odio provident deserunt in dolor autem saepe!
+                                </p>
+                                <a href="#">More Info</a>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="/MEDIA/BARBER-CHELO-MEDIA/customer-1.png" alt="Image">
+                            <div class="img-details">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis aliquid excepturi et ut hic nisi, 
+                                    veritatis non quae odio provident deserunt in dolor autem saepe!
+                                </p>
+                                <a href="#">More Info</a>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="/MEDIA/BARBER-CHELO-MEDIA/customer-2.png" alt="Image">
+                            <div class="img-details">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis aliquid excepturi et ut hic nisi, 
+                                    veritatis non quae odio provident deserunt in dolor autem saepe!
+                                </p>
+                                <a href="#">More Info</a>
+                            </div>
+                        </div>
+                        <div class="manual-btns">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                        </div>
+                    </div>
+                </div>
+        </main>
+        <div class="spacer"></div>
+        <!-- BARBERS -->
+        <section>
+            <div class="barbers">
+                <div class="chelo">
+                    <div class="chelo-img"><img src="/MEDIA/BARBER-CHELO-MEDIA/chelo.jpeg" alt=""></div>
+                    <div class="chelo-content">
+                        <h4>Chelo Llyod</h4>
+                        <p>
+                            With 18 years of experience as a dual-licensed barber and cosmetologist, I’m here to provide quality cuts and styles that suit you. 
+                            <br>
+                            <br>
+                            I’m passionate about what I do and enjoy getting to know my clients, ensuring you always leave feeling confident and refreshed. 
+    
+                            I’m ready to help you look and feel your best!
+                        </p>
+                        <a href="#">Email Me</a>
+                    </div>
+                </div>
+                <div class="rando">
+                    <div class="rando-img"><img src="/MEDIA/BARBER-CHELO-MEDIA/barber-2.png" alt=""></div>
+                    <div class="rando-content">
+                        <h4>Jane Doe</h4>
+                        <p>
+                            I’m passionate about what I do and enjoy getting to know my clients, ensuring you always leave feeling confident and refreshed. 
+                            <br>
+                            <br>
+                            I’m ready to help you look and feel your best!
+                        </p>
+                        <a href="#">Email Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="spacer"></div>
+        <section>
+            <div class="services">
+
+                <div class="serv-1">
+                    <div class="service-intro">
+                        <h3>Basic</h3>
+                        <img src="/MEDIA/ICONS/scissors.svg" alt="">
+                        <p class="service-desc"></p>
+                    </div>
+
+                    <ul class="service-type">
+                        <li>
+                            <div class="service-details">
+                                <h4>Basic Cuts & Trims</h4>
+                                <span class="service-info">
+                                    Classic style that serves as a foundation for many complex hairstyles
+                                </span>
+                                <span class="service-price">$20 - $35</span>  
+                            </div>
+                            
+                            <div class="service-list-wrapper">
+                                <ul class="service-list">
+                                    <li>Trim</li>
+                                    <li>Crew Cut</li>
+                                    <li>Bang Trim</li>
+                                    <li>Neck Trim</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="serv-2">
+                    <div class="service-intro">
+                        <h3>Specialized</h3>
+                        <img src="/MEDIA/ICONS/dryer.svg" alt="">
+                        <p class="service-desc"></p>
+                    </div>
+
+                    <ul class="service-type">
+                        <li>
+                            <div class="service-details">
+                                <h4>Specialized Cuts & Trims</h4>
+                                <span class="service-info">what are specialized cuts</span>
+                                <span class="service-price">$30 - $60</span>   
+                            </div>
+                            
+                            <div class="service-list-wrapper">
+                                <ul class="service-list">
+                                    <li>Fades</li>
+                                    <li>Blowouts</li>
+                                    <li>Curling/Flat Iron Styling</li>
+                                    <li>Accent Braid</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="serv-3">
+                    <div class="service-intro">
+                        <h3>Treatments</h3>
+                        <img src="/MEDIA/ICONS/wash.svg" alt="">
+                        <p class="service-desc"></p>
+                    </div>
+
+                    <ul class="service-type">
+                       <li>
+                            <div class="service-details">
+                                <h4>Coloring & Treatments</h4>
+                                <span class="service-info">what are these</span>
+                                <span class="service-price">$20 - $80</span>
+                            </div>
+
+                            <div class="service-list-wrapper">
+                                <ul class="service-list">
+                                    <li>Hair Coloring</li>
+                                    <li>Root Touch-ups</li>
+                                    <li>Toner Treatment</li>
+                                    <li>Deep Conditioning</li>
+                                    <li>Bleaching</li>
+                                </ul>
+                            </div>
+                        </li> 
+                    </ul>
+                </div>
+
+                <div class="serv-4">
+                    <div class="service-intro">
+                        <h3>Special Request</h3>
+                        <img src="/MEDIA/ICONS/hand.svg" alt="">
+                        <p class="service-desc"></p>
+                    </div>
+
+                    <ul class="service-type">
+                       <li>
+                            <div class="service-details">
+                                <h4>Inquiries</h4>
+                                <span class="service-info">*discrettion of barber/stylist</span>
+                                <span class="service-price">$40 - $?</span>
+                            </div>
+                        </li> 
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <div class="spacer"></div>
+        <!-- LOCATION -->
+        <section>
+            <div class="location">
+                <div class="location-details">
+                    <h2>Barber Chelo</h3>
+                <h3>Address</h3>
+                <span>2305 Champa Street</span>
+                <span>Denver, CO 80205</span>
+                <a href="#" class="more">Directions</a>
+                <h3>Phone</h3>
+                <span>(720) 555.555</span>
+                <a href="#" class="more">Contact</a>   
+                </div>
+
+                <div class="hours">
+                    <h3>Hours Of Operation</h3>
+                    <div class="day-hours">
+                        <span class="day">Monday</span>
+                        <span>10AM - 4PM</span>
+                    </div>
+                    <div class="day-hours">
+                        <span class="day">Tuesday</span>
+                        <span>10AM - 4PM</span>
+                    </div>
+                    <div class="day-hours">
+                        <span class="day">Wednesday</span>
+                        <span>10AM - 4PM</span>
+                    </div>
+                    <div class="day-hours">
+                        <span class="day">Thursday</span>
+                        <span>10AM - 4PM</span>
+                    </div>
+                    <div class="day-hours">
+                        <span class="day">Friday</span>
+                        <span>10AM - 4PM</span>
+                    </div>
+                    <div class="day-hours">
+                        <span class="day">Saturday</span>
+                        <span>10AM - 4PM</span>
+                    </div>
+                    <div class="day-hours">
+                        <span class="day">Sunday</span>
+                        <span>CLOSED</span>
+                    </div>
+                </div>
+
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d785251.8652850558!2d-106.20487442187499!3d39.75334900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c792ef26dc381%3A0xad5fe01788126bad!2sBarber%20Chelo!5e0!3m2!1sen!2sus!4v1747068475170!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div>
+                   <img src="/MEDIA/BARBER-CHELO-MEDIA/street-view-2.png" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="spacer"></div>
+    <footer>
+        <div class="socials">
+            <ul>
+                <li>
+                    <img src="/MEDIA/ICONS/fb.svg" alt="">
+                    <a href="https://www.facebook.com/barberchelo/">Facebook</a>
+                </li>
+                <li>
+                    <img src="/MEDIA/ICONS/insta.svg" alt="">
+                    <a href="https://www.instagram.com/downtown_barberchelo/?__d=11">Instagram</a>
+                </li>
+                <li>
+                    <img src="/MEDIA/ICONS/pin.svg" alt="">
+                    <a href="https://www.pinterest.com/search/pins/?q=hair&rs=typed">Pintrest</a>
+                </li>
+                
+                <li>
+                    <img src="/MEDIA/ICONS/booking.svg" alt="">
+                    <a href="https://barberchelo.barberly.app/tabs/home">Bookings</a>
+                </li>
+            </ul>
+        </div>
+        <div class="others">
+            <a href="#">Contact Us</a>
+
+            <a href="#">Privacy Policy</a>
+
+            <a href="#">Terms & Conditions</a>
+
+            <a href="#">Cancellation Policy</a>
+
+            <a href="#">Barber Chelo Calender</a>
+        </div>
+        
+        <div class="copyright">
+            <span>Barber Chelo &copy</span>
+        </div>
+    </footer>
+</body>
+</html>

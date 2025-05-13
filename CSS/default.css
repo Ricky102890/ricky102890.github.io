@@ -1,0 +1,103 @@
+/* UNIVERSAL */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* FONTS */
+@font-face {
+    font-family: 'Spiritual';
+    src: url(/ASSETS/FONTS/Spiritual.otf);
+}
+@font-face {
+    font-family: 'Barber';
+    src: url(/ASSETS/FONTS/CreatoDisplay-Regular.otf);
+}
+/* ROOT */
+:root {
+    --font__barber: 'Barber', sans-serif;
+    --font__spiritual: 'Spiritual', sans-serif;
+    --link__clr__aqua_blue: #FFBE00;
+    --bkg__clr__slate: #6b717e;
+    --margin__left: auto;
+    --margin__right: auto;
+    --section__top_btm_margin: 2rem;
+    --section__padding_all: 4rem 2rem;
+    --padding__left: 15px;
+    --padding__right: 15px;
+    --div__padding: 3rem 2rem;
+    --spacing__headings: .25rem;
+    --spacing__span: .5rem;
+    --shadow__dark_clr: rgba(0, 0, 0, .7);
+    --shadow__light_clr: rgba(255, 255, 255, .6);
+}
+/* UTILITY */
+.clr-pop {
+    color: #0041ff;
+}
+/* HTML */
+html {
+    scroll-behavior: smooth;
+    font-size: 12px;
+}
+/* STYLES */
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    font-family: var(--font__barber);
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    color: white;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block
+}
+h1,
+h2,
+h3, 
+h4, 
+h5, 
+h6 {
+    display: block;
+    letter-spacing: .2rem;
+}
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+    margin-left: var(--margin__left);
+    margin-right: var(--margin__right);
+    /* padding-left: var(--padding__left);
+    padding-right: var(--padding__right); */
+    position: relative;
+}
+main {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+section {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+}
+footer {
+    width: 100%;
+    position: relative;
+}
