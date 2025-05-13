@@ -488,7 +488,7 @@ main {
     transition: 2s;
 }
 .slide img {
-    width: 800px;
+    width: 360px;
     height: 500px;
     object-fit: cover;
 }
