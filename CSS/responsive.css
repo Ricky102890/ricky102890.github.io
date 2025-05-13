@@ -14,7 +14,7 @@
         display: none;
     }
     .hamburger-btn[aria-expanded="true"] {
-        
+
     }
     .hamburger-btn[aria-expanded="true"] ~ .navbar.show {
 
@@ -26,7 +26,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        row-gap: 2rem;
     }
     .home-intro {
         width: 100%;
