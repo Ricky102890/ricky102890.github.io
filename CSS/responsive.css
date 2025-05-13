@@ -1,0 +1,87 @@
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        position: relative;
+    }
+    .hamburger-btn[aria-expanded="false"] {
+        display: block;
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+    .hamburger-btn[aria-expanded="false"] ~ .navbar {
+        display: none;
+    }
+    .hamburger-btn[aria-expanded="true"] {
+        display: none;
+    }
+    .hamburger-btn[aria-expanded="true"] ~ .navbar.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } 
+    .nav-acct {
+        margin-left: auto;
+    }
+    .nav-acct-menu.show {
+        width: 100%;
+        min-width: 375px;
+        top: 20px;
+        left: -285%;
+        margin: 0 auto;
+    }
+    .aria-nav-menu {
+        top: 0;
+        left: 0;
+    }
+    .hero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .home-intro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .home-intro p {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .mega-menu.show {
+        width: fit-content;
+        padding: .25rem;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+        left: -300%;
+    }
+    .mega-list {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .mega-list a {
+        font-size: 1rem;
+    }
+    .scroll-top {
+        width: 20px;
+        height: 20px;
+        bottom: 2rem;
+        right: 2rem;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    
+}
