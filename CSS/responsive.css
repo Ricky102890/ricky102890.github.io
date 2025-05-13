@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     body {
         width: 100%;
     }
@@ -14,10 +14,10 @@
         display: none;
     }
     .hamburger-btn[aria-expanded="true"] {
-
+        display: none;
     }
     .hamburger-btn[aria-expanded="true"] ~ .navbar.show {
-
+        display: flex;
     } 
     .nav-acct {
         margin-left: auto;
