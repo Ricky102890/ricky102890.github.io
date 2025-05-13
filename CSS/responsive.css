@@ -18,8 +18,10 @@
         display: none;
     }
     .hamburger-btn[aria-expanded="true"] ~ .navbar.show {
+        width: 100%;
         display: flex;
         flex-direction: column;
+        gap: 20px;
         position: absolute;
         top: 80px;
         left: 50%;
@@ -29,15 +31,19 @@
         margin-left: auto;
     }
     .nav-acct-menu.show {
-        width: 100%;
-        min-width: 375px;
-        top: 20px;
-        left: -285%;
+        width: 300px;
+        top: 22px;
+        left: -230%;
         margin: 0 auto;
     }
-    .aria-nav-menu {
-        top: 0;
-        left: 0;
+    .aria-nav-menu.show {
+        width: 300px;
+        height: 300px;
+        top: -100px;
+        left: -80px;
+    }
+    main {
+        padding: 0;
     }
     .hero {
         width: 100%;
@@ -56,13 +62,14 @@
         line-height: 2rem;
     }
     .mega-menu.show {
-        width: fit-content;
+        width: 360px;
         padding: .25rem;
         display: flex;
         flex-direction: column;
         position: absolute;
+        padding: .25rem;
         top: 55px;
-        left: -300%;
+        left: -214%;
     }
     .mega-list {
         padding: 1rem;
@@ -77,6 +84,9 @@
         height: 20px;
         bottom: 2rem;
         right: 2rem;
+    }
+    .barbers p {
+        max-width: 300px;
     }
     footer {
         display: flex;
