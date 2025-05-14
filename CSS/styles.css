@@ -735,6 +735,108 @@ input[type='radio']:not(:last-child) {
 .service-list li {
     font-size: 1.25rem;
 }
+/* REVIEWS */
+.reviews {
+    width: 100%;
+    position: relative;
+}
+.arrows {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+}
+.arrows img {
+    width: 32px;
+    height: 32px;
+}
+.left-btn {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(-25%, -50%);
+    z-index: 21;
+    cursor: pointer;
+}
+.right-btn {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translate(-25%, -50%);
+    z-index: 21;
+    cursor: pointer;
+}
+.review-slider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    background: red;
+}
+.review-slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.review-slide {
+    width: 20%;
+    height: 500px;
+    transition: 1s;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.review-slide a {
+    width: fit-content;
+    height: auto;
+    margin: 2rem auto;
+    padding: .5rem 1rem;
+    display: block;
+    text-align: center;
+    background: #FFBE00;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+    cursor: pointer;
+}
+.review-content {
+    width: 100%;
+    padding: 2rem 10rem;
+    color: #27160F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.show-btn {
+    width: fit-content;
+    margin: 2rem auto;
+    padding: .5rem 1rem;
+    display: block;
+    background: #FFBE00;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+}
+.review-content .hidden-text {
+    display: none;
+}
+.review-content .hidden-text.show {
+    display: inline-block;
+}
+.review-author {
+
+}
+.review-rating {
+
+}
+.checked {
+    color: orange;
+}
 /* LOCATION */
 .location {
     width: 100%;

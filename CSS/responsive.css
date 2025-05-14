@@ -4,7 +4,8 @@
     }
     header {
         width: 100%;
-        position: relative;
+        position: sticky;
+        top: 0;
     }
     .hamburger-btn[aria-expanded="false"] {
         display: block;
@@ -13,34 +14,59 @@
     }
     .hamburger-btn[aria-expanded="false"] ~ .navbar {
         display: none;
+        transition: all 700ms ease-in-out;
+    }
+    .hamburger-btn[aria-expanded="false"] .close-nav {
+        display: none;
     }
     .hamburger-btn[aria-expanded="true"] {
         display: none;
     }
-    .hamburger-btn[aria-expanded="true"] ~ .navbar.show {
+    .hamburger-btn[aria-expanded="true"] ~ .navbar {
         width: 100%;
+        height: 100px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 10px;
         position: absolute;
         top: 80px;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        background: #27160F;
+        transition: all 700ms ease-in-out;
     }
-     
+    .navbar.show {
+        display: none;
+        transition: all 700ms ease-in-out;
+    }
+    .close-nav {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        cursor: pointer;
+        transition: all 700ms ease-in-out;
+    }
+    .close-nav img {
+        width: 20px;
+        height: 20px;
+    }
     .nav-acct {
-        margin-left: auto;
+        position: static;
     }
     .nav-acct-menu.show {
-        width: 300px;
-        top: 22px;
-        left: -230%;
+        width: 100%;
+        top: 100px;
+        left: -24px;
         margin: 0 auto;
     }
     .aria-nav-menu.show {
         width: 300px;
         height: 300px;
-        top: -100px;
+        top: -160px;
         left: -80px;
     }
     main {

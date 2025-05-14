@@ -42,10 +42,62 @@ toggleServicesMenu();
 function toggleNavigation() {
     const hamburgerBtn = document.getElementById("hamburger_btn");
     const navMenu = document.getElementById("nav_bar");
-
+    const closeNavBtn = document.getElementById("hide_nav");
     hamburgerBtn.addEventListener("click", () => {
         if(hamburgerBtn)
         hamburgerBtn.setAttribute("aria-expanded", "true");
     })
+    closeNavBtn.addEventListener("click", () => {
+        hamburgerBtn.setAttribute("aria-expanded", "false");
+    })
+
 }
 toggleNavigation();
+
+function reviewSlider() {
+    const leftArrow = document.getElementById("left_arrow");
+    const rightArrow = document.getElementById("right_arrow");
+    const firstSlide = document.getElementById("first_slide");
+    let currentIndex = 1;
+    rightArrow.addEventListener("click", () => {
+        if (currentIndex > 0 &&  currentIndex < 2) {
+            firstSlide.style.marginLeft = '-20%';
+            currentIndex++;
+        }
+        else if (currentIndex > 1 &&  currentIndex < 3) {
+            firstSlide.style.marginLeft = '-40%';
+            currentIndex++;
+        }
+        else if (currentIndex > 2 &&  currentIndex < 4) {
+            firstSlide.style.marginLeft = '-60%';
+            currentIndex++;
+        }
+        else if (currentIndex > 3 &&  currentIndex < 5) {
+            firstSlide.style.marginLeft = '-80%';
+            currentIndex++;
+        }
+        else {
+            firstSlide.style.marginLeft = '0%';
+            currentIndex = 1;
+        }
+    });
+        leftArrow.addEventListener("click", () => {
+            if (currentIndex > 1 && currentIndex < 3) {
+                firstSlide.style.marginLeft = '0%';
+                currentIndex--;
+            }
+            else if (currentIndex > 2 &&  currentIndex < 4) {
+                firstSlide.style.marginLeft = '-20%';
+                currentIndex--;
+            }
+            else if (currentIndex > 3 &&  currentIndex < 5) {
+                firstSlide.style.marginLeft = '-40%';
+                currentIndex--;
+            }
+            else {
+                firstSlide.style.marginLeft = '0%';
+                currentIndex = 1;
+            }
+    });
+}
+reviewSlider();
